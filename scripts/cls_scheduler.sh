@@ -1,0 +1,6 @@
+#!/bin/bash
+export TRANSFORMERS_CACHE=/home/ext/konle/diss
+python3 /home/ext/konle/diss/code/cls_eval.py -clsmodel "/home/ext/konle/diss/eval_1990_checkpoint_2500.pt" -output "/home/ext/konle/diss/logs_run_60.tsv" -modelname "deepset/gbert-base" -pretrainlr 2e-5 -pretrainbsize 10 -pretrainsteps 100000 -evalinterval 500 -pretrainmethod "bert" -pretrainfile "/home/ext/konle/diss/data/zeit/pre_1980.txt" -evalbsize 10 -clsbsize 5 -clslr 1e-5 -clsepochs 1
+python3 /home/ext/konle/diss/code/cls_eval.py -clsmodel "/home/ext/konle/diss/eval_2000_checkpoint_2500.pt" -output "/home/ext/konle/diss/logs_run_60.tsv" -modelname "deepset/gbert-base" -pretrainlr 2e-5 -pretrainbsize 10 -pretrainsteps 100000 -evalinterval 500 -pretrainmethod "bert" -pretrainfile "/home/ext/konle/diss/data/zeit/pre_1980.txt" -evalbsize 10 -clsbsize 5 -clslr 1e-5 -clsepochs 1
+python3 /home/ext/konle/diss/code/cls_eval.py -clsmodel "/home/ext/konle/diss/eval_2010_checkpoint_2500.pt" -output "/home/ext/konle/diss/logs_run_60.tsv" -modelname "deepset/gbert-base" -pretrainlr 2e-5 -pretrainbsize 10 -pretrainsteps 100000 -evalinterval 500 -pretrainmethod "bert" -pretrainfile "/home/ext/konle/diss/data/zeit/pre_1980.txt" -evalbsize 10 -clsbsize 5 -clslr 1e-5 -clsepochs 1
+
