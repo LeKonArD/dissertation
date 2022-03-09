@@ -1,0 +1,2 @@
+holds datasets and raw text files for pretraining.
+See Downloads Section in Github Readme
